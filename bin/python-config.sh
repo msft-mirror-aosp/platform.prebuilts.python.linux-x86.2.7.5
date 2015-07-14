@@ -31,7 +31,7 @@ installed_prefix ()
     echo $RESULT
 }
 
-prefix_build="/tmp/ndk-andrewhsieh/buildhost/install/prebuilt/linux-x86"
+prefix_build="$TMPDIR/buildhost/install/prebuilt/linux-x86"
 prefix_real=$(installed_prefix "$0")
 
 # Use sed to fix paths from their built to locations to their installed to locations.
